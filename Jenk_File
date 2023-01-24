@@ -14,6 +14,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Hello Again!'
+                snykSecurity snykInstallation: 'Snyk-Info', snykTokenId: 'my_snyk'
                 
             }
         }
